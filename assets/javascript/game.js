@@ -44,7 +44,6 @@ var questionPage = $("#question-page");
 var answerPage = $("#answer-page");
 var resultsPage = $("#results-page");
 
-// More global variables.
 //____________________________________________________________________________________
 var questionID;
 var index = 0;
