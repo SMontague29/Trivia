@@ -1,0 +1,178 @@
+/* So padding and border no longer increase width. */
+* {
+  box-sizing: border-box;
+}
+
+html {
+	background: url(../images/background.jpg) no-repeat center center fixed;
+}
+
+header {
+	font-size: 50px;
+	text-align: center;
+	margin: 5%;
+	color: #af87ff;
+}
+
+li {
+	height: 15%;
+	list-style: none;
+	font-family: sans-serif;
+	margin-top: 1%;
+	padding: 1%;
+	font-size: x-large;
+}
+
+.hover {
+	background-color: #ccc;
+	margin-right: 3%;
+}
+
+section {
+	background-color: #af87ff;;
+	font-size: 20px;
+	text-align: center;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 5%;
+	height: 375px;
+	text-align: center;
+	font-size: 20px;
+}
+
+button {
+	width: 40%;
+	height: 10%;
+	font-size: 20px;
+	border: 2px solid black;
+	background: #ccc;
+}
+
+#answer-media {
+	width: 55%;
+	height: 55%;
+	margin-top: 2%;
+}
+
+#correct-answer-info,
+#answer-assessment {
+	margin-top: 1%;
+}
+
+#start {
+	margin-top: 24%;
+}
+
+#restart {
+	margin-top: 5%;
+}
+
+.timer {
+	padding-top: 5%;
+	font-size: x-large;
+}
+
+#question,
+#summary {
+	padding-top: 2%;
+	font-size: x-large;
+}
+
+.results {
+	font-size: 20px;
+	padding-top: 2%;
+}
+
+/*
+  These rules take effect when the browser's width
+  is 1200px or more.
+*/
+@media screen and (min-width: 1200px) {
+
+	section {
+		height: 500px;
+		font-size: x-large;
+	}
+
+	ol {
+		margin-top: 5%;
+	}
+
+	#answer-media {
+		width: 43%;
+	}
+
+	#main-container {
+		margin-top: 5%;
+	}
+}
+
+/*
+  These rules take effect when the browser's width
+  is 1024px or more.
+*/
+@media screen and (min-width: 1024px) {
+
+	#start {
+		margin-top: 21%;
+	}
+
+	#answer-media {
+		width: 43%;
+	}
+}
+
+/*
+  These rules take effect when the browser's width
+  is 769px or more.
+*/
+@media screen and (max-width: 980px) {
+
+	/*
+	  No specific rules for large screens at this time.
+	*/
+
+}
+
+
+/*
+  These rules take effect when the browser's width
+  is 641px or more.
+*/
+@media screen and (max-width: 768px) {
+
+	#answer-media{
+		width: 55%;
+	}
+
+	#start {
+		margin-top: 26%;
+	}
+}
+
+/*
+  These rules take effect when the browser's width
+  is 640px or less.
+*/
+@media screen and (max-width: 640px) {
+
+	header {
+		font-size: 31px;
+	}
+
+	#answer-media {
+		height: 57%;
+		width: 85%;
+		margin-top: 7%;
+	}
+
+	#start {
+		margin-top: 48%;
+	}
+
+	#restart {
+		margin-top: 10%;
+		font-size: 15px;
+	}
+
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <!-- Document responsive across devices. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Document's character set. -->
+    <meta charset="UTF-8">
+    <title>Music Trivia Game</title>
+    <!-- Linking CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- Linking Custom Harry Potter Font -->
+    <link rel="stylesheet" href="assets/font/stylesheet.css" type="text/css"/>
+  </head>
+  <body>
+
+    <div class="header-container">
+      <header>MUSIC TRIVIA!</header>
+    </div>
+
+    <div class="main-container">
+      <section id="start-page">
+        <button id="start">Start</button>
+      </section>
+      <section id="question-page">
+        <div class="timer">Time Remaining: <span class="time"></span></div>
+        <div id="question"></div>
+        <ol id="selectable" class="answer-choices"></ol>
+      </section>
+      <section id="answer-page">
+        <div class="timer">Time Remaining: <span class="time"></span></div>
+        <div id="answer-assessment"></div>
+        <div id="correct-answer-info"></div>
+        <iframe id="answer-media" width="540" height="275" src="https://www.youtube.com/embed/Rg1LLVWZyg8?autoplay=0&showinfo=0&controls=0" frameborder="0" allowfullscreen></iframe>
+      </section>
+      <section id="results-page">
+        <div class="timer">Time Remaining: <span class="time"></span></div>
+        <div id="summary">All done, here's how you did!</div>
+        <div class="results">Correct Answers: <span id="correct-answers"></span></div>
+        <div class="results">Incorrect Answers: <span id="incorrect-answers"></span></div>
+        <div class="results">Unanswered: <span id="unanswered"></span></div>
+        <button id="restart">Start Over?</button>
+      </section>
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+  </body>
+</html>
