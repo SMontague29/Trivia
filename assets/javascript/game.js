@@ -60,7 +60,6 @@ var timeIntervalID;
 // Fires when start button clicked.
 function addStartClickListener() {
 	$("#start").on("click", function() {
-		console.log("Start button clicked");
 
 		// Reset index so first question on start.
 		index = 0;
@@ -87,7 +86,6 @@ function addStartClickListener() {
 	});
 };
 
-// Fires when answer list item selected.
 function addAnswerClickListener() {
 	$("li").on("click", function() {
 
